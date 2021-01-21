@@ -1,0 +1,93 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+htmml, body {
+    max-width: 100%;
+    width: 100%;
+}
+body {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px;
+
+} 
+/* @media screen and (min-width: 780px) {
+    .full-width-img {
+    margin: auto;
+    width: 90%;
+    }
+} */
+#grid{
+    display : grid;
+    grid-row-start: 3;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+    grid-gap:20px;
+    width: 100%;
+
+/* display: flex;
+flex-wrap:wrap; 
+width: 100%; */
+
+}
+
+.product-item {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+
+.product-bg {
+    background-size: 100% 100%;
+    /* background-position: cover; */
+     height: 230px;
+    width: 100%;  
+    max-width: 100%;
+    border-radius: 2px;
+
+}
+
+#body{
+    display:grid;
+    grid-template-rows:  10em 5em auto 10em;
+
+}
+
+.item-title {
+    font-size: 14px;
+    font-family: -apple-system,BlinkMacSystemFont,"Roboto";
+    font-weight: 300;
+    line-height: 1.6;
+    letter-spacing: normal;
+
+}
+.store{
+    font-size: 12px;
+    font-family: -apple-system,BlinkMacSystemFont,"Roboto";
+    font-weight: 300;
+    line-height: 1.6;
+    letter-spacing: normal;
+}
+
+.price {
+
+    font: 16px #222 500 normal;
+    font-family: -apple-system,BlinkMacSystemFont,"Roboto";
+    line-height: 1.6;
+    
+}
+
+#nav {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    border: 1px solid black;
+
+    
+
+}
