@@ -1,0 +1,91 @@
+#nav {
+    /* display: grid;
+    grid-template-rows: 1fr 1fr; */
+    /* border: 1px solid black; */
+    padding: 0;
+
+
+}
+
+.logo {
+    font-size: 30px;
+    font-family:  "Guardian-egyptt";
+    color:  #ff7300;
+    text-decoration: none;
+
+}
+
+.search-box {
+    height : 35px;
+    width:700px;
+    position: absolute;
+    left: 145px;
+    top: 22px;
+    border: none;
+    border-color: transparent;
+    background-color: rgb(245, 241, 241);
+    font-size: 15px;
+
+
+    /* border-radius: 50px; */
+
+
+}
+.styled search-box:hover{
+    outline:1px;
+    background-color:white;
+    
+
+}
+ input:focus{
+    outline: none;
+    /* background-color:white; */
+}
+
+
+.nav-link { 
+text-decoration: none;  
+color :  #222;
+font-size: 14px;
+font-family: "Graphik Webfont", -apple-system,BlinkMacSystemFont,"Roboto" ;
+}
+
+#nav li{
+   
+    flex-grow: 9;
+    list-style: none;
+
+}
+.menu-bar {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px rgb(201, 199, 199) solid;
+
+        padding-bottom: 10px;
+
+} 
+
+.sbox {
+    border: 1px solid rgba(0, 0, 0, 0.959);
+    height : 40px;
+    width:900px;
+    border-radius: 50px;
+    position: relative;
+    left: 55px;
+    top: -30px;
+    background-color: rgb(245, 241, 241);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+#placeholder {
+    height: 150px;
+    width: 900px;
+    
+}
+
+/* .pic {
+    grid-row-start: 2;
+} */

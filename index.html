@@ -5,20 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Etsy Page</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="nav.css">
+
   </head>
-  <body id = "body">
+  <body id = "body">  
     <nav id="nav">
       <div class = 'search-bar'>
-        <input type="text">
-        <button type="submit">
+        <a href="#etsy" class ='logo' >Etsy</a>
+        <div class = 'sbox'></div>
+        <input id ='type-search' class ='search-box' type="text"
+        placeholder="Search for anything">
+        <!-- <button type="submit"> -->
+      </div >
+      <div class ="menu-bar" id ="menu-bar"> </div>
+      <div>
+          <ul id='dropdown'></ul>
       </div>
-
     </nav>
-    
+  <div id ='pic'>
+    <img src="http://placehold.it/250x250" alt="">
+    <img src="http://placehold.it/250x250" alt="">
+    <img src="http://placehold.it/250x250" alt="">
+
+  </div>
     <div id="grid"></div>
 
     <footer id="footer"></footer>
     <script src="items.js"></script>
     <script src="main.js"></script>
+    
   </body>
 </html>
