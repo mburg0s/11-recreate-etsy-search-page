@@ -6,31 +6,112 @@
     <title>Etsy Page</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="nav.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   </head>
   <body id = "body">  
     <nav id="nav">
-      <div class = 'search-bar'>
-        <a href="#etsy" class ='logo' >Etsy</a>
-        <div class = 'sbox'></div>
-        <input id ='type-search' class ='search-box' type="text"
-        placeholder="Search for anything">
-        <!-- <button type="submit"> -->
-      </div >
-      <div class ="menu-bar" id ="menu-bar"> </div>
-      <div>
-          <ul id='dropdown'></ul>
+      <div class ="container">
+        <div class = 'search-bar'>
+          <a href="https://www.etsy.com/" target = blank class ='logo' >Etsy</a>
+          <input id ='type-search' class ='search-box' type="text"
+          placeholder="Search for anything">
+
+          <a href="#" id ="search-icon"><span class="fa fa-search"></span> </a>
+          <a href="#" id ="x-icon"> <span class="fa fa-close"></span></a>
+
+          <a href="#" class ='sign-in'>Sign in</a>
+          <a href="#" id ="cart"> <span class="fa fa-shopping-cart"></span></a>
+        </div>
+        
+        <div class ="menu-nav">
+
+            <div class ="dropdown">
+                <li><a href="https://www.etsy.com/c/jewelry-and-accessories?ref=catnav-10855" class ="nav-link" id ="jewelry">Jewelry &amp; Accessories</li>
+                  <div class ="dropdown-item">
+                    <a href="https://www.etsy.com/c/jewelry-and-accessories?ref=catnav-10855"><strong>All Jewelry &amp; Accesories -></strong></a> 
+                    <a href="" id ="accessories">Accessories</a>
+                      <!-- <span class ="accessories"> 
+                        <a href="#">Hats & Caps</a>
+                        <a href="#">Beanies & Winter Hats</a>
+                        <a href="#">Hair Accessories</a>
+                        <a href="#"></a>Headbands</a>
+                        <a href="#">Fascinators & Mini Hats</a>
+                        <a href="#">Wreaths & Tiaras</a>
+                        <a href="#">Sunglasses & Eyewear</a>
+                      </span> --> 
+                    <a href="">Bags &amp; Purses</a> 
+                    <a href="">Necklaces</a>
+                    <a href="">Rings</a>
+                    <a href="">Earrings</a>
+                    <a href="">Bracelets</a>
+                    <a href="">All Jewelry</a>
+                  </div>
+
+            </div>       
+                <li><a href="https://www.etsy.com/c/clothing-and-shoes?ref=catnav-10923" class ="nav-link" id ="cloth">Clothing & Shoes</a></li>
+                <li><a href="https://www.etsy.com/c/home-and-living?ref=catnav-891" class ="nav-link" id ="home">Home & Living</a></li>
+                <li><a href="https://www.etsy.com/c/wedding-and-party?ref=catnav-10983" class ="nav-link" id ="wedding">Wedding & Party</a></li>
+                <li><a href="https://www.etsy.com/c/toys-and-entertainment?ref=catnav-11049" class ="nav-link" id ="toys">Toys & Entertainment</a></li>
+                <li><a href="https://www.etsy.com/c/art-and-collectibles?ref=catnav-66" class ="nav-link" id ="art">Art & Collectibles</a></li>
+                <li><a href="https://www.etsy.com/c/craft-supplies-and-tools?ref=catnav-562" class ="nav-link" id ="craft">Craft Supplies</a></li>
+                <li><a href="https://www.etsy.com/gift-guides" class ="nav-link" id ="gift">Gifts & GiftCards</a></li>
       </div>
     </nav>
-  <div id ='pic'>
-    <img src="http://placehold.it/250x250" alt="">
-    <img src="http://placehold.it/250x250" alt="">
-    <img src="http://placehold.it/250x250" alt="">
+    
+    <div class ="ad container">
+      <a href="" class ="arrtime">Estimated Arrival Anytime</a>
+      <!-- <span id = "new">New</span> -->
+      <a href="" class ="filter">All Filters</a>
+      <span id ="count"></span>
+      <a href=""> <span id ="question" class ="fa fa-question-circle"> </span> </a>
+      <a href="" id="heart"> <span class ="fa fa-heart-o"></span> </a>
+      <a href="" id = "up-down">↑↓</a>
+    </div>
 
-  </div>
-    <div id="grid"></div>
+    <div id="grid" class ="container">
 
-    <footer id="footer"></footer>
+    </div>
+
+
+    <footer id="footer">
+      <div class = "foot-lightblue" id ="foot1" >
+        <div class ="container">
+          <p class ="foot-text">Yes! Send me exclusive offers, unique gift ideas, and 
+            personalized tips for shopping and selling on Etsy.
+          </p>
+          <input id ='email' class ='email' type="text" placeholder="Enter your email">
+          <a href="" class="subscribe"><span></span>Subscribe</span></a> 
+        <div class = "contact container" id ="foot2">
+          <div id ="shop">
+            <li>Shop</li>
+            <li> <a href="https://www.etsy.com/giftcards?ref=ftr"> Gift Cards </a></li> 
+            <li> <a href="https://blog.etsy.com/en/?ref=ftr"> Etsy blog </a></li> 
+          </div>
+          <div id = "seller">
+            <li>Sell</li>
+            <li> <a href="https://www.etsy.com/sell?ref=ftr"> Sell on Etsy</a></li>
+            <li> <a href="https://community.etsy.com/t5/Etsy-Teams/ct-p/teams"> Teams </a></li>
+            <li> <a href="https://community.etsy.com/t5/Etsy-Forums/ct-p/forums"> Forums </a></li>
+            <li> <a href="https://www.etsy.com/affiliates?ref=ftr">Affiliate </a></li>
+          </div>
+          <div id = "about">
+            <li>About</li>
+            <li> <a href="https://www.etsy.com/about?ref=ftr"> Etsy Inc.</a></li>
+            <li> <a href="https://www.etsy.com/legal?ref=ftr">Policies</a> </li>
+            <li> <a href="https://investors.etsy.com/home/default.aspx">Investors</a> </li>
+            <li> <a href="https://careers.etsy.com/global/en">Careers</a> </li>
+            <li> <a href="https://www.etsy.com/press?ref=ftr">Press</a> </li>
+            <li> <a href="https://www.etsy.com/impact?ref=ftr">Impact</a> </li>
+
+          </div>
+          <div>
+            <li>Help</li>
+            <li> <a href="https://help.etsy.com/hc/en-us?segment=shopping">Help Center </a></li>
+            <li> <a href="">Privacy settings </a></li>
+          </div>
+        </div>
+      </div>  
+    </footer>
     <script src="items.js"></script>
     <script src="main.js"></script>
     

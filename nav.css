@@ -1,12 +1,18 @@
 #nav {
-    /* display: grid;
-    grid-template-rows: 1fr 1fr; */
-    /* border: 1px solid black; */
+    border-bottom: 1px solid rgb(219, 218, 218);
     padding: 0;
+    width: 100%;
+    grid-row-start: 1;
+
 
 
 }
 
+.container {
+    width: 80%;
+    margin: 0 auto;
+
+}
 .logo {
     font-size: 30px;
     font-family:  "Guardian-egyptt";
@@ -16,30 +22,36 @@
 }
 
 .search-box {
-    height : 35px;
-    width:700px;
-    position: absolute;
-    left: 145px;
-    top: 22px;
-    border: none;
-    border-color: transparent;
+    border: 1px solid rgba(223, 220, 220, 0.959);
+    height : 40px;
+    width:900px;
+    border-radius: 50px;
     background-color: rgb(245, 241, 241);
-    font-size: 15px;
-
-
-    /* border-radius: 50px; */
-
+    text-indent: 20px;
 
 }
-.styled search-box:hover{
-    outline:1px;
-    background-color:white;
-    
+.search-box:hover,
+#email:hover,
+input:focus,
+{
+    border: 2px solid #000000;
+    transition: all 0.5s ease-in-out;    
+    background-color: #ffffff;
 
+} 
+
+.sign-in:hover,
+#cart-icon:hover {
+    transition: all 0.5s ease-in-out;    
+ 
 }
- input:focus{
-    outline: none;
-    /* background-color:white; */
+
+input:focus {
+    outline:none;
+    background-color: #ffffff;
+
+
+
 }
 
 
@@ -48,44 +60,137 @@ text-decoration: none;
 color :  #222;
 font-size: 14px;
 font-family: "Graphik Webfont", -apple-system,BlinkMacSystemFont,"Roboto" ;
+list-style: none; 
 }
-
-#nav li{
-   
-    flex-grow: 9;
-    list-style: none;
-
-}
-.menu-bar {
-    display: flex;
-    flex-direction: row;
-    border-bottom: 2px rgb(201, 199, 199) solid;
-
-        padding-bottom: 10px;
-
-} 
-
-.sbox {
-    border: 1px solid rgba(0, 0, 0, 0.959);
-    height : 40px;
-    width:900px;
-    border-radius: 50px;
-    position: relative;
-    left: 55px;
-    top: -30px;
-    background-color: rgb(245, 241, 241);
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-#placeholder {
-    height: 150px;
-    width: 900px;
     
+
+#search-icon {
+    font-size: 20px;
+    position: relative;
+    left: -40px;
+    padding: 5px;
+    color: black;
+    height: 20px;
+    width:30px;
+
+}
+#search-icon:hover {
+    background-color: rgb(231, 228, 228);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+
 }
 
-/* .pic {
-    grid-row-start: 2;
-} */
+#x-icon {
+    font-size: 20px;
+    position: relative;
+    right: 100px;
+    color: black;
+    border-radius: 50px;
+    width: 100px; 
+
+
+}
+
+.sign-in {
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+    font-family: "Graphik Webfont", -apple-system,BlinkMacSystemFont,"Roboto" ;
+    position: relative;
+    right: -100px;
+    height: 30px;
+    width:  30px;
+    padding:10px;
+    border-radius: 20px;
+    border: 0px solid #000000;
+
+}
+
+#cart {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    right: -130px;
+    height: 30px;
+    width:  30px;
+    padding:10px;
+    border-radius: 50%;
+
+}
+
+.sign-in:hover, #cart:hover,
+#search-icon:hover, 
+#x-icon:hover
+{
+
+    background-color: rgb(224, 223, 223);
+
+}
+.menu-nav {
+    display: flex;
+    
+    /* align-items: center; */
+    justify-content: space-around;
+    color: black;
+    font-family: "Graphik Webfont", -apple-system,BlinkMacSystemFont,"Roboto" ;
+    padding: 20px;
+    position:absolute;
+
+}
+
+.menu-nav li {
+    list-style: none;
+    padding: 5px 0px 0px 40px;
+    text-align: left;
+    /* margin: 0px; */
+
+}
+.menu-nav li a:hover{
+    text-decoration: underline;
+
+}
+.dropdown {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+
+}
+.dropdown-item {
+    display: none;
+    top: 45px;
+    position: absolute;
+    background-color: #ffffff;
+    width: 860px;
+    box-shadow: -1px 11px 14px 2px rgba(26,8,8,0.75);
+
+}
+
+.dropdown-item a {
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    width: 320px;
+    border-right: 1px solid rgb(230, 226, 226);
+    color: #000000;
+
+
+}
+.dropdown-item a:hover{
+    background-color: #f0ebeb;
+}
+
+.dropdown:hover .dropdown-item{
+    display: block;
+}
+
+
+.accessories {
+    position: relative;
+    left: 700px;
+
+}
+

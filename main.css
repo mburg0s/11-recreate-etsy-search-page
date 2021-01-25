@@ -17,6 +17,7 @@ html, body {
     grid-row-start: 3;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-gap:20px;
+    /* position: absolute; */
     /* width: 1%; */
 
 }
@@ -28,11 +29,12 @@ html, body {
     font-family: "Graphik Webfont", -apple-system,BlinkMacSystemFont,"Roboto";
     line-height: 1.6;
     letter-spacing: normal;
+
     
 }
 
 .img-bg {
-     height: 260px;
+     height: 200px;
     width: 100%;  
     border-radius: 2px;
 
@@ -40,26 +42,30 @@ html, body {
 
 #body, footer{
     display:grid;
-    grid-template-rows:  1fr 10em auto 25em;
+    grid-template-rows:  6em 2em auto 15em;
     grid-gap: 10px;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    padding-top: 15px;
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-top: 10px;
 
 }
 
 .item-title {
     font: 14px 300;
+    text-decoration: none;
+    color: black;
+
 
 
 }
 .store{
     font-size: 12px;
     font-weight: 300;
+    text-decoration: none;
+    color: black;
+
     
 }
 
@@ -69,15 +75,227 @@ html, body {
     
 }
 
-img {
-    margin:5px;
-}
+
  #pic {
     display:flex;
     justify-content: center;
     border-bottom: 2px rgb(201, 199, 199) solid;
     padding-bottom: 10px;
-        /* margin:10px; */
 
+}
+.ad {
+    padding: 10px;
+    grid-row-start: 2;
+    font-size: 12px;
+    font-family: "Graphik Webfont", -apple-system,BlinkMacSystemFont,"Roboto";
+
+}
+
+#count{
+    position:relative;
+    left: 780px;
+
+}
+#question{
+    position: relative;
+    left: 790px;
+    color: black;
+}
+
+.arrtime {
+    padding : 5px;
+    height : 30px;
+    width : 170px;
+    background-color:transparent;
+    border-radius: 20px;
+    text-decoration: none;
+    color:black;
+    border: 1px solid black;
+}
+input:hover,
+.arrtime:focus {
+    transition: all 0.5s ease-in-out;
+    border: 1px solid black;
+}
+#new{
+    height : 10px;
+    width : 15px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    position: relative;
+    top: -10px;
+    left : -15px;
+    padding: 1px;
+}
+#heart {
+    position: relative;
+    font-size: 15px;
+    border : 1px solid black;
+    border-radius: 50px;
+    padding: 3px;
+    left: 800px;
+    color: black;
+
+}
+#heart:hover {
+    transition: all .5s ease-in-out;
+}
+
+.filter {
+    padding:5px;
+    height: 30px;
+    width: 80px;
+    background-color:transparent;
+    border-radius: 20px;
+    text-decoration: none;
+    color:black;
+    border: 1px solid black;
+
+}
+#up-down {
+    height: 30px;
+    width: 30px;
+    border: 1px solid black;
+    border-radius: 50px;
+    position: relative;
+    left: 815px;
+}
+.arrtime:hover,
+.filter:hover,
+#up-down:hover
+ {
+
+    border: 1px solid #000000;
+    transition: all 0.5s ease-in-out;  
+      
+
+
+}
+#question:hover {
+    cursor:help;
+}
+
+.arrtime:hover,
+.filter:hover,
+#heart:hover
+/* .img-bg:hover */
+{
+    box-shadow: 4px 4px 6px 0px rgba(50, 50, 50, 0.24);
+
+}
+  #grid-pic:hover #img-heart{
+    display: block;
+    /* margin:-6px; */
+}
+
+
+#img-heart {
+    display: none;
+    font-size: 20px;
+    /* color: ; */
+    color: #000000;
+    position: relative;
+    left: 200px;
+    top: -200px;
+    border: 1px solid;
+    border-radius: 50px;
+    height:30px;
+    width:30px;
+    padding:5px;
+    background-color:#ffffff;
+
+}
+/* .accessories {
+    position: relative;
+    top: -80px;
+    text-align: left;
+    left: -20px;
+} */
+
+#footer {
+
+    grid-row-start:4;
+    border-top: 1px solid rgb(219, 218, 218);
+    grid-template-rows: 1fr 1fr;
+    padding-top: 30px;
+}
+#foot1 {
+    padding: 20px;
+    grid-row-start:1;
+}
+#foot2 {
+
+    padding : 20px;
+    grid-row-start:2 ;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+#contact {
+    display: flex;
+    
+    padding:10px;
+    font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto";
+    font-size: 13px;
+
+}
+.contact a {
+    text-decoration: none;
+    color: black;
+
+
+}
+
+#email {
+    position: relative;
+    left: 300px;
+    height: 40px;
+    width: 600px;
+    border-radius: 20px;
+    border: 1px solid rgba(223, 220, 220, 0.959);
+    text-indent: 15px;
+
+}
+.foot-text {
+    text-align: center;
+    font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px;
+}
+
+.foot-lightblue {
+  background-color:  #d7e6f5;
+  height: 100%;
+  width: 100%;
+  /* padding-top: 50px; */
+
+}
+.foot-darkblue {
+    background-color: #2f466c;
+}
+.subscribe {
+    position: relative;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    left: 205px;
+    height: 80px;
+    width: 170px; 
+    padding: 10px;   
+
+
+}
+.subscribe:hover {
+    background-color: rgb(231, 228, 228);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+
+}
+#foot2 li {
+    padding: 5px;
+    list-style: none;
 
 }
